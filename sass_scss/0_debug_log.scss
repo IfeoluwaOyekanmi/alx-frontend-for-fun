@@ -1,7 +1,7 @@
 /*0_debug_log.scss*/
 $print: "Hello World";
-.container 
-          {@debug $print;}
+@debug $print;
+          
 
 
 
