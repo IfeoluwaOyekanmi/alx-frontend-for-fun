@@ -1,15 +1,14 @@
 /*alx-frontend-for-fun/sass_scss/8-mixin_margin.scss*/
-@mixin margin-b {
-  margin-left: 10px;
-  margin-right: 10px;
-  }
-@mixin margin-d {
+@mixin margin-b ($margin-b:b){
+margin-left: 10px;
+margin-right: 10px;}
+@mixin margin-d ($margin-d:d){
   margin-left: 15px;
   margin-right:15px;
 }
 body {
-  @include margin-b();
+  @include margin-b;
 }
 div {
-  @include margin-d();
+  @include margin-d;
 }
