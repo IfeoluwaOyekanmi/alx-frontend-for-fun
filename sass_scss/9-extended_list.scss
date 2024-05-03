@@ -1,0 +1,13 @@
+/*alx-frontend-for-fun/sass_scss/9-extended_list.scss*/
+.info {
+  font: 12px;
+}
+.success {
+  color: #00ff00;
+}
+.success .info { 
+  color: #00ff00;
+}
+.warning {
+  color: #ff0000;
+}
