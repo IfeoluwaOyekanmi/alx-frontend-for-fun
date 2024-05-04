@@ -1,0 +1,8 @@
+/*11-loop_phots.scss*/
+@import "list-names";
+@each $name in $list-names {
+  .#{unquote($name)} {
+    background-image: 
+    url ('#{$name'}.jpg);
+  }
+}

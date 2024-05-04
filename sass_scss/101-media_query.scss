@@ -1,0 +1,14 @@
+/*101-media_query.scss*/
+$hi-font-size: 20px;
+$h1-font-size-small-screen: 20px;
+$small-screen-width: 320px;
+
+h1 {
+  font-size: $h1-font-size;
+}
+@media (max-width) {
+  h1 {
+    font-size:
+    $h1-font-size-small-screen;
+  }
+  }

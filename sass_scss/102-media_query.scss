@@ -1,0 +1,36 @@
+/*102-media_query.scss*/
+$h1-font-size: 20px;
+$h1-font-size-medium-screen: 18px;
+$h1-font-size-small-screen: 16px;
+$h1-font-size-smallest-screen: 14px;
+$text-color-small-screen: #1D1D1D;
+
+$medium-screen-width: 960px;
+$small-screen-width: 640px;
+$smallest-screen-width: 320px;
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+@media (max-width: $medium-screen-width) {
+  h1 {
+    font-size: $h1-font-size-medium-screen;
+  }
+}
+
+@media (max-width: $small-screen-width) {
+  h1 {
+    font-size: $h1-font-size-small-screen;
+  }
+}
+
+@media (max-width: $smallest-screen-width) {
+  h1 {
+    font-size: $h1-font-size-smallest-screen;
+  }
+ 
+  h1.small {
+    color: $text-color-small-screen;
+  }
+} 
