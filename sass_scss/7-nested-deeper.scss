@@ -1,11 +1,11 @@
 /*alx-frontend-for-fun/sass_scss/7-nested-deeper.scss*/
 body {
-  font: 14px;
+  font-size: 14px;
   h1 {
-    font: 16px;
+    font-size: 16px;
 
   &.smaller {
-    font:12px
+    font-size:12px;
   }
   }
 }
