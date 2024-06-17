@@ -1,21 +1,27 @@
-a{
-  color: red;
-  /* font-size: 3rem; */
-  cursor: pointer;
+h2 {
+  display: inline;
+  position: relative;
+}
+a {
+  display: inline-block;
   text-decoration: none;
-  position:relative;
-} 
-a::after{
+  color: #cc1c3c;
+  z-index: 1;
+}
+a::before {
   content: "";
-  position: absolute;
-  height: 1px;
+  visibility: hidden;
+  height: 3px;
+  width: 64%;
+  background-color: #cc1c3c;
+  left: 3.8rem;
   bottom: 0;
-  width: 0;
-  transition: width .2s;
-  background: red;
-  left: 0;
-
-  }
-a:hover:after {
-width: 100%;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .5s ease-out;
+}
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
