@@ -1,21 +1,17 @@
-a{
-  color: red;
-  /* font-size: 3rem; */
-  cursor: pointer;
-  text-decoration: none;
-  position:relative;
-} 
-a::after{
+.toggle-cb {
+  display: none;
+}
+.toggle-label {
+  position: relative;
+}
+.toggle-inner {
+  content: url(images/check_off.png);
+}
+.toggle-cb:checked + .toggle-label .toggle-inner {
   content: "";
   position: absolute;
-  height: 1px;
-  bottom: 0;
-  width: 0;
-  transition: width .2s;
-  background: red;
-  left: 0;
-
-  }
-a:hover:after {
-width: 100%;
+}
+.toggle-cb:checked  + .toggle-label .toggle-switch {
+  content: url(images/check_on.png);
+  position: absolute;
 }
