@@ -1,4 +1,4 @@
-/*C:\Users\tobit\OneDrive\Documents\project\alx-frontend-for-fun\sass_scss\100-loop_col.scss*/
+/*C:\Users\tobit\OneDrive\Documents\project\alx-frontend-for-fun\sass_scss\100loop_col.scss*/
 @for $i from 1 through 4 {
   .col-#{$i} {
     width: percentage(1/ $i);
